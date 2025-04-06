@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vlookup page</title>
+        <style>
+            .file-row{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .file-item label{ 
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Enter files</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="file-row">
+                <div class="file-item">
+                    <label for="file1">File 1</label>
+                    <input type="file" name="files" id="file1" required>
+                </div>
+                <div class="file-item">
+                    <label for="file2">File 2</label>
+                    <input type="file" name="files" id="file2" required>
+                </div>
+                <div class="file-item">
+                    <label for="file3">File 3</label>
+                    <input type="file" name="files" id="file3">
+                </div>
+                <div class="file-item">
+                    <label for="file4">File 4</label>
+                    <input type="file" name="files" id="file4">
+                </div>
+                <div class="file-item">
+                    <label for="file5">File 5</label>
+                    <input type="file" name="files" id="file5">
+                </div>
+            </div><br><br>
+
+            <input type="submit" value="Upload">
+        </form>
+    </body>
+</html>

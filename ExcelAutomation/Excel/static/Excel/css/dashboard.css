@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("../Excel/images.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px #00000070;
+    text-align: center;
+}
+
+.card select, .card button {
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.card button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #218838;
+}
