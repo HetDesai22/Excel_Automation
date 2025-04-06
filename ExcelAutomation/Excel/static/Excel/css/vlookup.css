@@ -1,0 +1,99 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.12);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.file-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+.file-item {
+    flex: 1;
+    text-align: center;
+}
+.file-item label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.file-item input[type="file"] {
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+    color: black;
+}
+.uploaded-content {
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.uploaded-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.uploaded-content ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.uploaded-content li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.uploaded-content li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
