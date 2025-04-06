@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Excel Automation Dashboard</title>
-    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <link rel="stylesheet" href="{% static 'Excel/css/dashboard.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="navbar">
-        <h1>Excel Automation</h1>
+        Excel Automation Dashboard
     </div>
 
     <div class="dashboard-container">
         <div class="card">
-            <h2>Select Operation</h2>
+            <h2 style="text-align:center; margin-bottom: 20px;">Select Operation</h2>
             <form method="POST">
                 {% csrf_token %}
-                <label for="Operation">Choose:</label>
+                <label for="Operation">Choose an Excel Operation:</label>
                 <select id="Operation" name="Operation">
+                    <option value="">-- Select --</option>
                     <option value="vlookup">VLOOKUP</option>
                     <option value="sum">SUM</option>
-                </select><br><br><br>
+                </select>
+
+                <div class="description" id="operationDesc"></div>
+
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
 
-    <script src="{% static 'js/dashboard.js' %}"></script>
+    <script src="{% static 'Excel/js/dashboard.js' %}"></script>
 </body>
 </html>
